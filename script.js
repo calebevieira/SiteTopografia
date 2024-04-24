@@ -53,7 +53,7 @@ wppForm.addEventListener('submit', function (e) {
     wppForm.classList.add('sent');
 
     setTimeout(() => {
-      window.open(`https://api.whatsapp.com/send?text=Olá meu nome é ${formData.nome}, gostaria de saber mais sobre os seus serviços! Esses são os meus contatos:%0D%0A Telefone: ${formData.telefone} %0D%0A Email: ${formData.email}&phone=5531982734705`, '_self');
+      window.open(`https://api.whatsapp.com/send?text=Olá meu nome é ${formData.nome}, gostaria de saber mais sobre os seus serviços! Esses são os meus contatos:%0D%0A Telefone: ${formData.telefone} %0D%0A Email: ${formData.email}&phone=5531982148490`, '_self');
     }, 700);
 
   }, 2000);

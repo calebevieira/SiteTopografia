@@ -166,8 +166,13 @@ header .logo
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #111111ef;
-  
+  background-color: #313131ef;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.795)), url("/img/Cinco-situaciones-en-las-que-es-requerido-un-levantamiento-topografico.jpg");
+  background-size: cover;
+  background-position: 30% 50%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
 }
 .menu ul 
 {
@@ -182,14 +187,40 @@ header .logo
 .menu ul li a
 {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
   color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 15px;
+  }
 
-}
 .menu ul li a:hover
 {
-  color: #03a9f4; 
+  background-color: #25D366;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
+.menu ul li {
+  margin-bottom: 35px;
+}
+
+.menu a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social img{
+  width: 75px;
+  height: 80px;
+}
+
 
 @media (max-width: 991px)
 {
@@ -200,11 +231,19 @@ header .logo
   }
   .text h2
   {
-    font-size: 3em;
+    font-size: 10em;
   }
   .text h3
   {
     font-size: 2em;
+  }
+  .social img{
+    width: 55px;
+    height: 70px;
+  }
+
+  .menu ul li {
+    margin-bottom: 80px;
   }
 }
 
